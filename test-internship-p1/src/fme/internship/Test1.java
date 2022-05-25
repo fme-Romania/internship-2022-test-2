@@ -1,7 +1,8 @@
 /*______________________________________________________________________________________________________
  * 
- * Write a Java program that reads arguments from the command line 
- * and checks whether all numeric positive non-zero values appear in ascending order.
+ * Write a Java program that reads an array of N positive integers from the console
+ * and prints the first element that occurs at least K number of times.
+ * If there are no elements that occur at least K times, print out -1.
  * _____________________________________________________________________________________________________
  * 
  * 
@@ -10,17 +11,12 @@
  *______________________________________________________________________________________________________
  *
  *  Input:
- *      java Test1 1 0 -2 3 5 -7 -9 7 8 
+ *      N = 7, K = 2
+ *      A[7] = {1, 7, 4, 3, 4, 8, 7} 
  *  Output:
- *      YES
- *______________________________________________________________________________________________________
- *      
- *______________________________________________________________________________________________________
- *  
- *  Input:
- *      java Test1 1 0 -2 3 5 -7 -9 4 7 8 
- *  Output:
- *      NO
+ *      4
+ *  Explanation:
+ *      Both 7 and 4 occur 2 times, but 4 is the first element that occurs 2 times.
  *______________________________________________________________________________________________________
  *
  *______________________________________________________________________________________________________ 
@@ -39,5 +35,4 @@ public class Test1 {
     public static void main(String[] args) {
         System.out.println("FME Internship - Test1");
     }
-
 }

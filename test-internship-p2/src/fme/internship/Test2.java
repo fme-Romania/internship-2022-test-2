@@ -1,7 +1,6 @@
 /*______________________________________________________________________________________________________
  * 
- * Write a Java program that reads text from a file and prints out the third most frequent word(s)
- * in the text. If there is more than one word they will all be printed. 
+ * Write a Java program that reads text from a file and prints out all the distinct words from the text.
  * 
  * The text contains only alpha-numerical characters and spaces, 
  * and words are delimited by one or more spaces.
@@ -15,10 +14,10 @@
  *  Input: test.in
  *      
  *       test1 test2 test3 test1 test test2 test2
- *       test1 test3 test1 test test0
+ *       test1 test3 test1 test4 test test0
  *       
  *  Output:
- *      test3, test
+ *      test4, test0
  *______________________________________________________________________________________________________
  *
  *______________________________________________________________________________________________________ 
