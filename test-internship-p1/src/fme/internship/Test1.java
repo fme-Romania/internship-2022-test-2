@@ -26,8 +26,8 @@ package fme.internship;
 
 /**
  * 
- * @author <full name>
- * @email <email address>
+ * @author Robert Deak
+ * @email r.deak@fme.ro
  * 
  */
 public class Test1 {
