@@ -25,14 +25,42 @@
 
 package fme.internship;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 /**
- * 
- * @author <full name>
- * @email <email address>
- * 
+ * @author Andrei Neagu
+ * @email neaguandrei47@gmail.com
  */
+
 public class Test2 {
+
+    public static void printDistinct(String path) {
+        String text;
+
+        try {
+            text = Files.readString(Paths.get(path));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        var words = new ArrayList<String>(List.of(text.split("\\W"))) ;
+        var count = new HashMap<String, Integer>();
+
+        for (String word : words) {
+            count.merge(word, 1, Integer::sum);
+        }
+
+        count.entrySet().stream()
+                .filter(e -> e.getValue() == 1)
+                .forEach(word -> System.out.println(word.getKey()));
+    }
+
     public static void main(String[] args) {
-        System.out.println("FME Internship - Test2");
+        printDistinct("test-internship-p2/src/test.in");
     }
 }
